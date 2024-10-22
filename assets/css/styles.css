@@ -254,6 +254,15 @@ img{
 }
 
 /*========== HOME ==========*/
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height));
+  background: url('https://media.giphy.com/media/Pop5irM2ORaBaJcG1a/giphy.gif?cid=ecf05e477i4wntz04t3rczlvstztk2g2fzcsjw2k8j319eni&ep=v1_gifs_search&rid=giphy.gif&ct=g') center/cover no-repeat;
+}
+
 .home__container{
   height: calc(100vh - var(--header-height));
   align-content: center;
