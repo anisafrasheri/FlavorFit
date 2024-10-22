@@ -105,3 +105,51 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+const recipes = [
+    {
+        name: "Spaghetti Carbonara",
+        ingredients: ["spaghetti", "eggs", "bacon", "cheese"]
+    },
+    {
+        name: "Caesar Salad",
+        ingredients: ["lettuce", "croutons", "parmesan", "chicken"]
+    },
+    {
+        name: "Pancakes",
+        ingredients: ["flour", "milk", "eggs", "butter"]
+    },
+    {
+        name: "Fruit Smoothie",
+        ingredients: ["banana", "milk", "yogurt", "honey"]
+    }
+];
+
+function searchRecipes() {
+    // Get the user input
+    const input = document.getElementById('ingredient-input').value;
+    const ingredients = input.toLowerCase().split(',').map(item => item.trim());
+
+    // Filter recipes that contain any of the ingredients
+    const matchedRecipes = recipes.filter(recipe =>
+        ingredients.some(ingredient => recipe.ingredients.includes(ingredient))
+    );
+
+    // Display the matched recipes
+    const resultsContainer = document.getElementById('recipe-results');
+    resultsContainer.innerHTML = '';
+
+    if (matchedRecipes.length > 0) {
+        matchedRecipes.forEach(recipe => {
+            const recipeDiv = document.createElement('div');
+            recipeDiv.classList.add('recipe-result');
+            recipeDiv.innerHTML = `
+                <h3>${recipe.name}</h3>
+                <p>Ingredients: ${recipe.ingredients.join(', ')}</p>
+            `;
+            resultsContainer.appendChild(recipeDiv);
+        });
+    } else {
+        resultsContainer.innerHTML = '<p>No recipes found for the given ingredients.</p>';
+    }
+}
