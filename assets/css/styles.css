@@ -344,10 +344,12 @@ img{
 /*========== MENU ==========*/
 .menu__container {
   display: grid; /* Ensure this is set to grid */
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  grid-template-columns: repeat(4, 1fr); /* 5 equal columns */
   gap: 1rem; /* Space between items */
   align-items: center;
   align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .menu__content {
