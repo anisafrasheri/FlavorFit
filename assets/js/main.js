@@ -153,3 +153,17 @@ function searchRecipes() {
         resultsContainer.innerHTML = '<p>No recipes found for the given ingredients.</p>';
     }
 }
+
+// Toggle dropdown menu on click
+document.querySelector('.dropdown-toggle').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor click behavior
+    const dropdownMenu = this.nextElementSibling; // Get the dropdown menu
+    dropdownMenu.classList.toggle('show'); // Toggle visibility
+
+    // Close the dropdown if clicked outside
+    window.addEventListener('click', function(event) {
+        if (!event.target.closest('.dropdown')) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
+});

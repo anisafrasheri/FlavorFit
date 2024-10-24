@@ -677,3 +677,30 @@ body {
 .related-recipe__item {
   text-align: center;
 }
+
+.nav__item {
+  position: relative; /* Positioning context for dropdown */
+}
+
+.dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  background-color: white; /* Change to your preferred background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333; /* Change to your preferred text color */
+  display: block; /* Stack items vertically */
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
