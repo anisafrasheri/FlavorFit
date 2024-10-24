@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Recipe Blog - Caesar Salad</title>
+</head>
+<body>
+
+<!--========== SCROLL TOP ==========-->
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-chevron-up scrolltop__icon'></i>
+</a>
+
+<!--========== HEADER ==========-->
+<header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <a href="#" class="nav__logo">We Have Food At Home</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main">
+
+    <!--========== HERO BANNER ==========-->
+    <section class="recipe-banner section bd-container" id="recipe-banner">
+        <div class="recipe-banner__container bd-grid">
+            <img src="assets/img/caesar-salad-banner.jpg" alt="Caesar Salad" class="recipe-banner__img">
+            <div class="recipe-banner__data">
+                <h1 class="recipe-banner__title">Classic Caesar Salad</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--========== INGREDIENTS SECTION ==========-->
+    <section class="ingredients section bd-container" id="ingredients">
+        <h2 class="section-title">Ingredients</h2>
+        <div class="ingredients__menu bd-grid">
+            <ul class="ingredients__list">
+                <li><strong>Salad:</strong></li>
+                <li>1 head romaine lettuce, chopped</li>
+                <li>1/2 cup croutons</li>
+                <li>1/4 cup Parmesan cheese, grated</li>
+            </ul>
+            <ul class="ingredients__list">
+                <li><strong>Dressing:</strong></li>
+                <li>1/2 cup mayonnaise</li>
+                <li>1 clove garlic, minced</li>
+                <li>2 tbsp lemon juice</li>
+                <li>1 tsp Dijon mustard</li>
+                <li>2 tbsp olive oil</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <ul class="ingredients__list">
+                <li><strong>Optional Add-ons:</strong></li>
+                <li>Grilled chicken breast</li>
+                <li>Bacon bits</li>
+                <li>Anchovies</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--========== RECIPE STEPS ==========-->
+    <section class="recipe-steps section bd-container" id="recipe-steps">
+        <h2 class="section-title">Steps</h2>
+        <div class="recipe-steps__container bd-grid">
+            <p><strong>Step 1:</strong> Prepare the dressing by whisking together the mayonnaise, garlic, lemon juice, Dijon mustard, and olive oil. Season with salt and pepper.</p>
+            <p><strong>Step 2:</strong> In a large bowl, toss the chopped romaine lettuce with the dressing until evenly coated.</p>
+            <p><strong>Step 3:</strong> Top the salad with croutons, Parmesan cheese, and optional add-ons like grilled chicken or bacon bits.</p>
+            <p><strong>Step 4:</strong> Serve immediately and enjoy your Caesar Salad!</p>
+        </div>
+    </section>
+
+    <!--========== NUTRITION SECTION ==========-->
+    <section class="nutrition section bd-container" id="nutrition">
+        <h2 class="section-title">Nutritional Information</h2>
+        <div class="nutrition__container bd-grid">
+            <ul class="nutrition__list">
+                <li><strong>Calories:</strong> 300 kcal</li>
+                <li><strong>Protein:</strong> 8 g</li>
+                <li><strong>Fat:</strong> 25 g</li>
+                <li><strong>Carbohydrates:</strong> 10 g</li>
+                <li><strong>Fiber:</strong> 3 g</li>
+                <li><strong>Sugar:</strong> 2 g</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--========== SHARE RECIPE SECTION ==========-->
+    <section class="share-recipe section bd-container" id="share-recipe">
+        <h2 class="section-title">Share this Recipe</h2>
+        <div class="share-recipe__container bd-grid">
+            <img src="assets/img/caesar-salad-share.jpg" alt="Caesar Salad" class="share-recipe__img">
+            <div class="share-recipe__details">
+                <p>Love this recipe? Share it with your friends and family!</p>
+                <button class="button share-recipe__button" id="share-button">Share</button>
+                <div class="share-recipe__socials">
+                    <a href="#" class="share-recipe__icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="share-recipe__icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="share-recipe__icon"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--========== RECIPE RATING AND COMMENTS ==========-->
+    <section class="recipe-rating section bd-container" id="recipe-rating">
+        <h2 class="section-title">Rate this Recipe</h2>
+        <div class="rating__container">
+            <span>Did you try this recipe? Rate it below:</span>
+            <div class="stars" id="star-rating">
+                <i class='bx bx-star' data-value="1"></i>
+                <i class='bx bx-star' data-value="2"></i>
+                <i class='bx bx-star' data-value="3"></i>
+                <i class='bx bx-star' data-value="4"></i>
+                <i class='bx bx-star' data-value="5"></i>
+            </div>
+            <p class="rating__description" id="rating-text">Click a star to rate</p>
+        </div>
+
+        <div class="comments__container bd-grid">
+            <h3 class="comments__title">Comments</h3>
+            <textarea class="comments__input" rows="5" placeholder="Leave a comment"></textarea>
+            <button class="button" id="submit-comment">Submit Comment</button>
+            <div id="comments-section" class="comments__list"></div>
+        </div>
+    </section>
+
+    <!--========== RELATED RECIPES SECTION ==========-->
+    <section class="related-recipes section bd-container" id="related-recipes">
+        <h2 class="section-title">Related Recipes</h2>
+        <div class="related-recipes__container bd-grid">
+            <div class="related-recipe__item">
+                <img src="assets/img/grilled-chicken.jpg" alt="Grilled Chicken Salad" class="related-recipe__img">
+                <h3 class="related-recipe__title">Grilled Chicken Salad</h3>
+                <button class="button related-recipe__button">View Recipe</button>
+            </div>
+            <div class="related-recipe__item">
+                <img src="assets/img/bacon-salad.jpg" alt="Bacon Salad" class="related-recipe__img">
+                <h3 class="related-recipe__title">Bacon Salad</h3>
+                <button class="button related-recipe__button">View Recipe</button>
+            </div>
+            <div class="related-recipe__item">
+                <img src="assets/img/veggie-salad.jpg" alt="Veggie Salad" class="related-recipe__img">
+                <h3 class="related-recipe__title">Veggie Salad</h3>
+                <button class="button related-recipe__button">View Recipe</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--========== FOOTER ==========-->
+<footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+        <h2 class="footer__title">About Us</h2>
+        <p>Your favorite recipe blog bringing you delicious recipes.</p>
+        <div class="footer__socials">
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+        </div>
+    </div>
+</footer>
+
+<!--========== JS FOR SHARE BUTTON ==========-->
+<script>
+    document.getElementById('share-button').addEventListener('click', function() {
+        const shareData = {
+            title: 'Caesar Salad Recipe',
+            text: 'Check out this delicious Caesar Salad recipe!',
+            url: window.location.href
+        };
+
+        if (navigator.share) {
+            navigator.share(shareData).then(() => {
+                console.log('Thanks for sharing!');
+            }).catch((err) => {
+                console.log('Error sharing:', err);
+            });
+        } else {
+            alert('Your browser does not support the Share API.');
+        }
+    });
+</script>
+
+</body>
+</html>
